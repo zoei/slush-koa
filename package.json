@@ -1,0 +1,32 @@
+{
+  "name": "slush-koa",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slushgenerator"
+  ],
+  "author": "zoei@163.com",
+  "license": "MIT",
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-conflict": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-template": "^5.0.0",
+    "inquirer": "^4.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoei/slush-koa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoei/slush-koa/issues"
+  },
+  "homepage": "https://github.com/zoei/slush-koa#readme",
+  "description": ""
+}
