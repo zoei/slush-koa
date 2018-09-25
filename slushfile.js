@@ -20,7 +20,7 @@ gulp.task('default', function (done) {
     }
   ]).then(function (answers) {
     gulp.src(__dirname + '/templates/**/*.*')               // 使用脚本所在的目录作为相对路径。
-      .pipe(template(answers))                              // Lodash 模板支持，可以方便的在模板中进行插值。
+      .pipe(template(answers, { interpolate: /<%=([\s\S]+?)%>/g }))                              // Lodash 模板支持，可以方便的在模板中进行插值。
       .pipe(conflict('./'))                                 // 当文件冲突时，询问是否覆盖。
       .pipe(gulp.dest('./'))                                // 输出到执行命令的当前文件夹中。
       .pipe(gulpif(answers.install, install()))
